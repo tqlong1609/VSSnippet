@@ -12,31 +12,31 @@
   // 	],
   // 	"description": "Log output to console"
   // },
-  "init styles type I": {
+  "khởi tạo style ban đầu": {
     "prefix": "init-style",
     "body": [
       "* {",
-      "    margin: 0;",
-      "    padding: 0;",
-      "    box-sizing: border-box;",
+      "  margin: 0;",
+      "  padding: 0;",
+      "  box-sizing: border-box;",
       "}",
       "",
       "body {",
-      "    overflow-x: hidden;",
+      "  overflow-x: hidden;",
       "}",
       "",
       "img {",
-      "    display: block;",
-      "    max-width: 100%;",
+      "  display: block;",
+      "  max-width: 100%;",
       "}",
       "",
       "a {",
-      "    text-decoration: none;",
+      "  text-decoration: none;",
       "}"
     ],
-    "description": "init styles type I"
+    "description": "khởi tạo style ban đầu"
   },
-  "set background ::after": {
+  "background phía sau mờ hơn": {
     "prefix": "background-after",
     "body": [
       "$1::after {",
@@ -51,6 +51,33 @@
       "  opacity: 0.25;",
       "}"
     ],
-    "description": "set background ::after"
+    "description": "background phía sau mờ hơn"
   },
+  "giới hạn text trong số dòng quy định, khúc thừa thì ellipsis": {
+    "prefix": "text-clamp",
+    "body": [
+      "  display: -webkit-box;",
+      "  -webkit-line-clamp: $0;",
+      "  -webkit-box-orient: vertical;",
+      "  overflow: hidden;",
+      "  text-overflow: ellipsis;",
+      "  width: 100%;",
+      "  max-width: 100%;"
+    ],
+    "description": "giới hạn text trong số dòng quy định, khúc thừa thì ellipsis"
+  },
+  "khối hình vuông": {
+    "prefix": "square",
+    "body": ["  width: $1;", "  height: $1;", "  $0"],
+    "description": "khối hình vuông"
+  },
+  "canh giửa với flex": {
+    "prefix": "flex-center",
+    "body": [
+      "  display: flex;",
+      "  align-items: center;",
+      "  justify-content: center;"
+    ],
+    "description": "canh giửa với flex"
+  }
 }
