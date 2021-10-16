@@ -1,0 +1,56 @@
+{
+  // Place your snippets for css here. Each snippet is defined under a snippet name and has a prefix, body and
+  // description. The prefix is what is used to trigger the snippet and the body will be expanded and inserted. Possible variables are:
+  // $1, $2 for tab stops, $0 for the final cursor position, and ${1:label}, ${2:another} for placeholders. Placeholders with the
+  // same ids are connected.
+  // Example:
+  // "Print to console": {
+  // 	"prefix": "log",
+  // 	"body": [
+  // 		"console.log('$1');",
+  // 		"$2"
+  // 	],
+  // 	"description": "Log output to console"
+  // },
+  "init styles type I": {
+    "prefix": "init-style",
+    "body": [
+      "* {",
+      "    margin: 0;",
+      "    padding: 0;",
+      "    box-sizing: border-box;",
+      "}",
+      "",
+      "body {",
+      "    overflow-x: hidden;",
+      "}",
+      "",
+      "img {",
+      "    display: block;",
+      "    max-width: 100%;",
+      "}",
+      "",
+      "a {",
+      "    text-decoration: none;",
+      "}"
+    ],
+    "description": "init styles type I"
+  },
+  "set background ::after": {
+    "prefix": "background-after",
+    "body": [
+      "$1::after {",
+      "  content: \"\";",
+      "  position: absolute;",
+      "  top: 0;",
+      "  left: 0;",
+      "  width: 100%;",
+      "  height: 100%;",
+      "  border-radius: inherit;",
+      "  background-color: currentColor;",
+      "  opacity: 0.25;",
+      "}"
+    ],
+    "description": "set background ::after"
+  },
+}
